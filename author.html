@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Author Page - Cube</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/icon.png"/>
+  </head>
+  <body>
+    <!-- Fixed header with back button that goes back one step -->
+    <header>
+      <div class="header-left">
+        <a href="javascript:history.back()" id="back-button">
+          <img src="assets/back.svg" alt="Back" class="back-icon" />
+        </a>
+        <img src="assets/mantek.svg" alt="Logo" class="logo" />
+        <h1 id="author-name">Author</h1>
+      </div>
+    </header>
+
+    <main>
+      <!-- Support Author button container (if provided by JSON) -->
+      <section id="author-stories" class="stories-list">
+        <!-- Author's story cards will be injected here via JavaScript -->
+      </section>
+      <div id="support-container"></div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; <span id="footer-year"></span> Khomod Inc. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/author.js"></script>
+  </body>
+</html>
