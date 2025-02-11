@@ -1,5 +1,7 @@
 {
   "stories": [
-    "journey.json"
+    "journey.json",
+    "wild.json",
+    "goat.json"
   ]
 }
