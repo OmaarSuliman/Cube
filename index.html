@@ -7,14 +7,22 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="assets/icon.png"/>
   </head>
-  <body>
+  <body class="home-page">
     <!-- Fixed header with improved background -->
     <header>
       <div class="header-left">
-        <img src="assets/mantek.svg" alt="Logo" class="logo" />
+        <a href="https://khomod.vercel.app/" class="logo-link">
+          <img src="assets/mantek.svg" alt="Logo" class="logo" />
+        </a>
       </div>
       <div class="header-right">
-        <input type="text" id="search-input" placeholder="Search stories..." />
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search stories..." />
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </div>
       </div>
     </header>
 
