@@ -460,3 +460,17 @@ html, body {
   border-color: rgba(0, 113, 227, 0.8);
   transform: translateY(-1px);
 }
+
+/* Mobile and Tablet adjustments for chapter content */
+@media (max-width: 768px) {
+  .chapter h3 {
+    font-size: 2rem; /* Increased for better readability */
+  }
+  .chapter p {
+    font-size: 1.4rem; /* Larger base font size for mobile/tablet */
+    line-height: 2.2;  /* Increased line height for improved legibility */
+  }
+  .chapter {
+    padding: 1.5rem; /* Adjusted padding for smaller screens */
+  }
+}
