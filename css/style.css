@@ -120,6 +120,13 @@ body.story-page {
   background-attachment: fixed;
 }
 
+/* iOS Safari workaround: override fixed background */
+@supports (-webkit-touch-callout: none) {
+  body.story-page {
+    background-attachment: scroll;
+  }
+}
+
 /* Chapter container with enhanced blur effect */
 .chapter {
   margin-bottom: 40px;
@@ -287,6 +294,8 @@ body.story-page::after {
   background-position: center;
   z-index: -1;
   opacity: 1;
+  pointer-events: none;
+  transform: translateZ(0);
 }
 
 /* Ensure story page's footer doesn't have doodles */
@@ -473,4 +482,4 @@ html, body {
   .chapter {
     padding: 1.5rem; /* Adjusted padding for smaller screens */
   }
-}
+  }
