@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="card-content">
           <div class="card-header">
             <h2 class="card-title">${highlightMatches(story.title)}</h2>
-            <p class="card-author"> by: ${highlightMatches(story.author)}</p>
+            <p class="card-author"> ل ${highlightMatches(story.author)}</p>
           </div>
           <div class="card-snippet">
             <p>${highlightMatches(story.snippet)}</p>
